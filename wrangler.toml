@@ -1,0 +1,19 @@
+# Cloudflare Workers Static Assets configuration
+# Pure static site — no adapter, assets-only deploy
+name = "bwax-services"
+compatibility_date = "2025-07-01"
+compatibility_flags = ["nodejs_compat"]
+
+# Serve the Astro build output as static assets
+[assets]
+directory = "./dist"
+binding = "ASSETS"
+
+# Optional: route to custom domain (configure in dashboard)
+# routes = [
+#   { pattern = "bwax.services/*", zone_name = "bwax.services" }
+# ]
+
+# Environment variables if needed later
+# [vars]
+# ENVIRONMENT = "production"

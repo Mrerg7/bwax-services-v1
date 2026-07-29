@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://bwax.services/sitemap-index.xml
