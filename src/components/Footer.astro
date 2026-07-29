@@ -1,0 +1,76 @@
+---
+const currentYear = new Date().getFullYear();
+---
+
+<footer id="acquisition" class="border-t border-brand-100 bg-accent-950 text-accent-100">
+  <!-- Domain Acquisition CTA -->
+  <div class="border-b border-accent-800/60">
+    <div class="container-narrow py-12 sm:py-16">
+      <div class="mx-auto max-w-3xl text-center">
+        <div class="mb-4 inline-flex items-center gap-2 rounded-full border border-brand-500/30 bg-brand-500/10 px-4 py-1.5 text-xs font-medium uppercase tracking-wider text-brand-300">
+          <span class="relative flex h-2 w-2">
+            <span class="absolute inline-flex h-full w-full animate-ping rounded-full bg-brand-400 opacity-75"></span>
+            <span class="relative inline-flex h-2 w-2 rounded-full bg-brand-400"></span>
+          </span>
+          Domain Available
+        </div>
+        <h2 class="font-display text-2xl font-semibold tracking-tight text-white sm:text-3xl">
+          Acquire <span class="text-brand-400">bwax.services</span>
+        </h2>
+        <p class="mt-4 text-base leading-relaxed text-accent-300 sm:text-lg">
+          Premium domain for Brazilian wax technology, spa services, or beauty education platforms. 
+          Positioned for global edge delivery and brand authority.
+        </p>
+        <div class="mt-8 flex flex-col items-center justify-center gap-4 sm:flex-row">
+          <a
+            href="mailto:sales@desertrich.com?subject=Domain%20Inquiry%3A%20bwax.services"
+            class="group inline-flex items-center gap-2 rounded-full bg-brand-500 px-8 py-3.5 text-sm font-semibold text-white shadow-lg shadow-brand-500/25 transition-all duration-200 hover:bg-brand-400 hover:shadow-xl hover:shadow-brand-500/30"
+          >
+            <svg class="h-4 w-4 transition-transform group-hover:translate-x-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+            </svg>
+            sales@desertrich.com
+          </a>
+          <span class="text-sm text-accent-400">Serious inquiries only</span>
+        </div>
+        <p class="mt-6 text-xs text-accent-500">
+          All acquisition discussions are confidential. Response within 1–2 business days.
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Bottom bar -->
+  <div class="container-narrow py-8">
+    <div class="flex flex-col items-center justify-between gap-6 sm:flex-row">
+      <div class="flex items-center gap-3">
+        <div class="flex h-8 w-8 items-center justify-center rounded-lg bg-brand-600/20 text-brand-400">
+          <svg class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M9.813 15.904L9 18.75l-.813-2.846a4.5 4.5 0 00-3.09-3.09L2.25 12l2.846-.813a4.5 4.5 0 003.09-3.09L9 5.25l.813 2.846a4.5 4.5 0 003.09 3.09L15.75 12l-2.846.813a4.5 4.5 0 00-3.09 3.09z" />
+          </svg>
+        </div>
+        <div>
+          <p class="text-sm font-medium text-white">BWax Services</p>
+          <p class="text-xs text-accent-400">Informational platform</p>
+        </div>
+      </div>
+
+      <div class="text-center text-xs leading-relaxed text-accent-500 sm:text-right max-w-md">
+        <p>
+          This website is for demonstration and informational purposes only. It does not constitute an offer of services,
+          a commitment to deploy, or a guarantee of outcomes. All statistics, projections, and references to specific
+          technologies are based on publicly available information as of the date shown and are subject to change.
+        </p>
+      </div>
+    </div>
+
+    <div class="mt-8 flex flex-col items-center justify-between gap-4 border-t border-accent-800/50 pt-6 sm:flex-row">
+      <p class="text-xs text-accent-500">
+        © {currentYear} BWax Services. All rights reserved.
+      </p>
+      <p class="text-xs text-accent-600">
+        Built with Astro · Powered by Cloudflare Workers Static Assets
+      </p>
+    </div>
+  </div>
+</footer>
