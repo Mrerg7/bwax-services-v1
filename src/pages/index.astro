@@ -1,0 +1,241 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+---
+
+<Layout>
+  <Header />
+
+  <main class="flex-1">
+    <!-- Hero -->
+    <section class="relative overflow-hidden">
+      <div class="absolute inset-0 bg-gradient-to-br from-brand-50 via-brand-50 to-brand-100/60"></div>
+      <div class="absolute -top-24 -right-24 h-96 w-96 rounded-full bg-brand-200/30 blur-3xl"></div>
+      <div class="absolute -bottom-32 -left-32 h-80 w-80 rounded-full bg-brand-300/20 blur-3xl"></div>
+
+      <div class="container-narrow relative section-padding">
+        <div class="mx-auto max-w-3xl text-center">
+          <div class="mb-6 inline-flex items-center gap-2 rounded-full border border-brand-200 bg-white/80 px-4 py-1.5 text-xs font-medium text-brand-700 shadow-sm backdrop-blur">
+            <span class="h-1.5 w-1.5 rounded-full bg-brand-500"></span>
+            Technology & Reliability Insights
+          </div>
+          <h1 class="font-display text-4xl font-semibold tracking-tight text-accent-900 sm:text-5xl lg:text-6xl">
+            Brazilian Wax <span class="text-brand-600">Epilation</span>
+          </h1>
+          <p class="mt-6 text-lg leading-relaxed text-accent-600 sm:text-xl">
+            A precise hair removal method that extracts hair from the root using warm or cold wax, 
+            delivering smooth skin for <strong class="font-semibold text-accent-800">3 to 4 weeks</strong>.
+          </p>
+          <div class="mt-10 flex flex-col items-center justify-center gap-4 sm:flex-row">
+            <a href="#characteristics" class="btn-primary">
+              Explore Characteristics
+            </a>
+            <a href="#acquisition" class="btn-secondary">
+              Domain Available
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About / Core Definition -->
+    <section id="about" class="section-padding bg-white">
+      <div class="container-narrow">
+        <div class="mx-auto max-w-3xl">
+          <h2 class="font-display text-3xl font-semibold tracking-tight text-accent-900 sm:text-4xl">
+            The Science of Wax Epilation
+          </h2>
+          <div class="mt-6 prose prose-lg prose-accent max-w-none">
+            <p class="text-accent-700 leading-relaxed">
+              Wax epilation is a hair removal method that extracts hair from the root using warm or cold wax, 
+              providing smooth skin for 3 to 4 weeks. It is generally considered less painful than epilators 
+              because the discomfort is a short, sharp sensation rather than the continuous pinching caused 
+              by mechanical tweezers.
+            </p>
+            <p class="text-accent-700 leading-relaxed">
+              When performed correctly—especially with hard wax formulations designed for sensitive zones—
+              the technique prioritizes adhesion to the hair shaft rather than the skin surface, minimizing 
+              trauma and supporting reliable, repeatable results.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Key Characteristics -->
+    <section id="characteristics" class="section-padding bg-brand-50">
+      <div class="container-narrow">
+        <div class="mx-auto max-w-2xl text-center">
+          <h2 class="font-display text-3xl font-semibold tracking-tight text-accent-900 sm:text-4xl">
+            Key Characteristics
+          </h2>
+          <p class="mt-4 text-lg text-accent-600">
+            Understanding the practical realities of professional wax epilation.
+          </p>
+        </div>
+
+        <div class="mt-14 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+          <!-- Effectiveness -->
+          <article class="card group">
+            <div class="mb-4 flex h-12 w-12 items-center justify-center rounded-xl bg-brand-100 text-brand-700 transition-colors group-hover:bg-brand-200">
+              <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+              </svg>
+            </div>
+            <h3 class="text-lg font-semibold text-accent-900">Effectiveness</h3>
+            <p class="mt-2 text-sm leading-relaxed text-accent-600">
+              Removes both coarse and fine hairs effectively. With consistent use, regrowth becomes finer over time.
+            </p>
+          </article>
+
+          <!-- Best For -->
+          <article class="card group">
+            <div class="mb-4 flex h-12 w-12 items-center justify-center rounded-xl bg-brand-100 text-brand-700 transition-colors group-hover:bg-brand-200">
+              <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 6a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0zM4.501 20.118a7.5 7.5 0 0114.998 0A17.933 17.933 0 0112 21.75c-2.676 0-5.216-.584-7.499-1.632z" />
+              </svg>
+            </div>
+            <h3 class="text-lg font-semibold text-accent-900">Best For</h3>
+            <p class="mt-2 text-sm leading-relaxed text-accent-600">
+              Ideal for sensitive areas such as the bikini line and underarms. Hard wax adheres only to hair, not skin.
+            </p>
+          </article>
+
+          <!-- Preparation -->
+          <article class="card group">
+            <div class="mb-4 flex h-12 w-12 items-center justify-center rounded-xl bg-brand-100 text-brand-700 transition-colors group-hover:bg-brand-200">
+              <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M12 6v6h4.5m4.5 0a9 9 0 11-18 0 9 9 0 0118 0z" />
+              </svg>
+            </div>
+            <h3 class="text-lg font-semibold text-accent-900">Preparation</h3>
+            <p class="mt-2 text-sm leading-relaxed text-accent-600">
+              Requires hair to be at least ¼ to ½ inch long. Sessions must allow for natural regrowth between treatments.
+            </p>
+          </article>
+
+          <!-- Cost -->
+          <article class="card group">
+            <div class="mb-4 flex h-12 w-12 items-center justify-center rounded-xl bg-brand-100 text-brand-700 transition-colors group-hover:bg-brand-200">
+              <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M12 6v12m-3-2.818l.879.659c1.171.879 3.07.879 4.242 0 1.172-.879 1.172-2.303 0-3.182C13.536 12.219 12.768 12 12 12c-.725 0-1.45-.22-2.003-.659-1.106-.879-1.106-2.303 0-3.182s2.9-.879 4.006 0l.415.33M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+              </svg>
+            </div>
+            <h3 class="text-lg font-semibold text-accent-900">Cost Profile</h3>
+            <p class="mt-2 text-sm leading-relaxed text-accent-600">
+              Involves recurring costs for supplies or professional salon visits, unlike one-time epilator purchases.
+            </p>
+          </article>
+
+          <!-- Skin Impact -->
+          <article class="card group sm:col-span-2 lg:col-span-1">
+            <div class="mb-4 flex h-12 w-12 items-center justify-center rounded-xl bg-brand-100 text-brand-700 transition-colors group-hover:bg-brand-200">
+              <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M9.75 3.104v5.714a2.25 2.25 0 01-.659 1.591L5 14.5M9.75 3.104c-.251.023-.501.05-.75.082m.75-.082a24.301 24.301 0 014.5 0m0 0v5.714c0 .597.237 1.17.659 1.591L19.8 15.3M14.25 3.104c.251.023.501.05.75.082M19.8 15.3l-1.57.393A9.065 9.065 0 0112 15a9.065 9.065 0 00-6.23.693L5 14.5m14.8.8l1.402 1.402c1.232 1.232.65 3.318-1.067 3.611A48.309 48.309 0 0112 21c-2.773 0-5.491-.235-8.135-.687-1.718-.293-2.3-2.379-1.067-3.61L5 14.5" />
+              </svg>
+            </div>
+            <h3 class="text-lg font-semibold text-accent-900">Skin Impact</h3>
+            <p class="mt-2 text-sm leading-relaxed text-accent-600">
+              Provides gentle exfoliation by removing dead skin cells. Temporary redness or mild irritation may occur.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Benefits / Reliability -->
+    <section id="benefits" class="section-padding bg-white">
+      <div class="container-narrow">
+        <div class="grid items-center gap-12 lg:grid-cols-2">
+          <div>
+            <h2 class="font-display text-3xl font-semibold tracking-tight text-accent-900 sm:text-4xl">
+              Reliability & Results
+            </h2>
+            <p class="mt-4 text-lg text-accent-600">
+              When executed with proper technique and quality materials, wax epilation remains one of the most 
+              predictable professional hair-removal modalities.
+            </p>
+            <ul class="mt-8 space-y-4">
+              <li class="flex gap-3">
+                <span class="mt-1 flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-brand-100 text-brand-700">
+                  <svg class="h-3.5 w-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="3">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5" />
+                  </svg>
+                </span>
+                <span class="text-accent-700">
+                  <strong class="font-medium text-accent-900">Root extraction</strong> — hair is removed from the follicle, delaying regrowth.
+                </span>
+              </li>
+              <li class="flex gap-3">
+                <span class="mt-1 flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-brand-100 text-brand-700">
+                  <svg class="h-3.5 w-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="3">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5" />
+                  </svg>
+                </span>
+                <span class="text-accent-700">
+                  <strong class="font-medium text-accent-900">Finer regrowth</strong> — consistent sessions often lead to thinner, softer hair over months.
+                </span>
+              </li>
+              <li class="flex gap-3">
+                <span class="mt-1 flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-brand-100 text-brand-700">
+                  <svg class="h-3.5 w-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="3">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5" />
+                  </svg>
+                </span>
+                <span class="text-accent-700">
+                  <strong class="font-medium text-accent-900">Hard wax advantage</strong> — targeted adhesion for delicate zones reduces skin pull and discomfort.
+                </span>
+              </li>
+              <li class="flex gap-3">
+                <span class="mt-1 flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-brand-100 text-brand-700">
+                  <svg class="h-3.5 w-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="3">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5" />
+                  </svg>
+                </span>
+                <span class="text-accent-700">
+                  <strong class="font-medium text-accent-900">Exfoliation benefit</strong> — simultaneous removal of dead surface cells leaves skin smoother.
+                </span>
+              </li>
+            </ul>
+          </div>
+
+          <div class="relative">
+            <div class="rounded-3xl border border-brand-100 bg-gradient-to-br from-brand-50 to-white p-8 shadow-lg shadow-brand-100/50">
+              <div class="space-y-6">
+                <div class="flex items-baseline justify-between border-b border-brand-100 pb-4">
+                  <span class="text-sm font-medium text-accent-500">Duration of smoothness</span>
+                  <span class="font-display text-2xl font-semibold text-brand-700">3–4 weeks</span>
+                </div>
+                <div class="flex items-baseline justify-between border-b border-brand-100 pb-4">
+                  <span class="text-sm font-medium text-accent-500">Ideal hair length</span>
+                  <span class="font-display text-2xl font-semibold text-brand-700">¼–½ in</span>
+                </div>
+                <div class="flex items-baseline justify-between border-b border-brand-100 pb-4">
+                  <span class="text-sm font-medium text-accent-500">Pain profile vs epilator</span>
+                  <span class="font-display text-2xl font-semibold text-brand-700">Shorter</span>
+                </div>
+                <div class="flex items-baseline justify-between">
+                  <span class="text-sm font-medium text-accent-500">Skin adhesion (hard wax)</span>
+                  <span class="font-display text-2xl font-semibold text-brand-700">Minimal</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Closing note -->
+    <section class="border-t border-brand-100 bg-brand-50/50 py-12">
+      <div class="container-narrow text-center">
+        <p class="mx-auto max-w-2xl text-sm text-accent-500">
+          Information presented reflects widely accepted professional understanding of wax epilation technology 
+          and is intended solely for educational and demonstration purposes.
+        </p>
+      </div>
+    </section>
+  </main>
+
+  <Footer />
+</Layout>
