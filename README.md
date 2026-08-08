@@ -10,7 +10,7 @@ Informational static site demonstrating Brazilian wax epilation technology & rel
 - **Tailwind CSS 3** + Typography plugin
 - **TypeScript** (strict)
 - **@astrojs/sitemap**
-- **Cloudflare Workers Static Assets** (no adapter required)
+- **Cloudflare Workers Static Assets** with a host-canonical redirect worker (`www` → apex)
 
 ## Development
 

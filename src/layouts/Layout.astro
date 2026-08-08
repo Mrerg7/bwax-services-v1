@@ -8,11 +8,16 @@ interface Props {
   canonical?: string;
 }
 
+const siteOrigin = 'https://bwax.services';
+const pathname = Astro.url.pathname.endsWith('/')
+  ? Astro.url.pathname
+  : `${Astro.url.pathname}/`;
+
 const {
   title = 'BWax Services | Brazilian Wax Epilation Technology & Insights',
   description = 'Explore the science, reliability, and best practices of Brazilian wax epilation. Professional insights on hair removal technology for smooth, lasting results.',
-  ogImage = 'https://bwax.services/og-image.png',
-  canonical = 'https://bwax.services/',
+  ogImage = `${siteOrigin}/og-image.png`,
+  canonical = new URL(pathname, siteOrigin).href,
 } = Astro.props;
 
 const siteName = 'BWax Services';
@@ -23,7 +28,9 @@ const twitterHandle = '@bwaxservices';
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="mobile-web-app-capable" content="yes" />
     <meta name="generator" content={Astro.generator} />
 
     <!-- Primary Meta -->
@@ -67,17 +74,12 @@ const twitterHandle = '@bwaxservices';
       "@context": "https://schema.org",
       "@type": "WebSite",
       "name": siteName,
-      "url": "https://bwax.services",
+      "url": siteOrigin,
       "description": description,
       "publisher": {
         "@type": "Organization",
         "name": "BWax Services",
-        "url": "https://bwax.services"
-      },
-      "potentialAction": {
-        "@type": "SearchAction",
-        "target": "https://bwax.services/?q={search_term_string}",
-        "query-input": "required name=search_term_string"
+        "url": siteOrigin
       }
     })} />
 
@@ -91,7 +93,7 @@ const twitterHandle = '@bwaxservices';
       "isPartOf": {
         "@type": "WebSite",
         "name": siteName,
-        "url": "https://bwax.services"
+        "url": siteOrigin
       },
       "about": {
         "@type": "Thing",
@@ -99,7 +101,7 @@ const twitterHandle = '@bwaxservices';
         "description": "Hair removal method using warm or cold wax that extracts hair from the root, providing smooth skin for 3 to 4 weeks."
       },
       "datePublished": "2026-07-29",
-      "dateModified": "2026-07-29",
+      "dateModified": "2026-08-08",
       "inLanguage": "en-US"
     })} />
 
@@ -135,7 +137,7 @@ const twitterHandle = '@bwaxservices';
       ]
     })} />
   </head>
-  <body class="min-h-screen flex flex-col">
+  <body class="min-h-screen flex flex-col overflow-x-hidden">
     <slot />
   </body>
 </html>
