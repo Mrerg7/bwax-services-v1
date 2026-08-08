@@ -1,5 +1,6 @@
 # Cloudflare Workers Static Assets + canonical host redirect worker
-name = "bwax-services"
+# Name must match Workers Builds project: bwax-services-v1
+name = "bwax-services-v1"
 compatibility_date = "2025-07-01"
 workers_dev = true
 preview_urls = false
