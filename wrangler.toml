@@ -1,9 +1,17 @@
 # Cloudflare Workers Static Assets + canonical host redirect worker
 name = "bwax-services"
 compatibility_date = "2025-07-01"
-workers_dev = false
+workers_dev = true
 preview_urls = false
 main = "src/worker.ts"
+
+[[routes]]
+pattern = "bwax.services/*"
+zone_name = "bwax.services"
+
+[[routes]]
+pattern = "www.bwax.services/*"
+zone_name = "bwax.services"
 
 [assets]
 directory = "./dist"
