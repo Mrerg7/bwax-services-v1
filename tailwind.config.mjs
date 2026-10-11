@@ -32,8 +32,8 @@ export default {
         },
       },
       fontFamily: {
-        sans: ['Inter', 'system-ui', 'sans-serif'],
-        display: ['Playfair Display', 'Georgia', 'serif'],
+        sans: ['system-ui', '-apple-system', 'BlinkMacSystemFont', 'Segoe UI', 'sans-serif'],
+        display: ['Georgia', 'Times New Roman', 'serif'],
       },
       animation: {
         'fade-in': 'fadeIn 0.6s ease-out',

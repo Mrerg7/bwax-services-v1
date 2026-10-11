@@ -14,8 +14,8 @@ const pathname = Astro.url.pathname.endsWith('/')
   : `${Astro.url.pathname}/`;
 
 const {
-  title = 'BWax Services | Brazilian Wax Epilation Technology & Insights',
-  description = 'Explore the science, reliability, and best practices of Brazilian wax epilation. Professional insights on hair removal technology for smooth, lasting results.',
+  title = 'bwax.services | Premium Domain for Sale | BWax Services',
+  description = 'Acquire bwax.services, a memorable .services domain for a Brazilian wax studio, beauty brand, salon platform, or wellness business. Request a confidential purchase quote.',
   ogImage = `${siteOrigin}/og-image.png`,
   canonical = new URL(pathname, siteOrigin).href,
 } = Astro.props;
@@ -83,6 +83,32 @@ const twitterHandle = '@bwaxservices';
       }
     })} />
 
+    <!-- Structured Data: domain listing -->
+    <script type="application/ld+json" set:html={JSON.stringify({
+      "@context": "https://schema.org",
+      "@type": "Product",
+      "name": "bwax.services",
+      "url": `${siteOrigin}/`,
+      "description": "Premium .services domain name for a Brazilian wax, beauty, salon, or wellness business.",
+      "category": "Internet domain name",
+      "brand": {
+        "@type": "Brand",
+        "name": "BWax Services"
+      },
+      "offers": {
+        "@type": "Offer",
+        "url": `${siteOrigin}/#acquisition`,
+        "availability": "https://schema.org/InStock",
+        "itemCondition": "https://schema.org/NewCondition",
+        "seller": {
+          "@type": "Organization",
+          "name": "BWax Services",
+          "url": siteOrigin,
+          "email": "sales@desertrich.com"
+        }
+      }
+    })} />
+
     <!-- Structured Data: WebPage + Article-like for informational -->
     <script type="application/ld+json" set:html={JSON.stringify({
       "@context": "https://schema.org",
@@ -101,7 +127,7 @@ const twitterHandle = '@bwaxservices';
         "description": "Hair removal method using warm or cold wax that extracts hair from the root, providing smooth skin for 3 to 4 weeks."
       },
       "datePublished": "2026-07-29",
-      "dateModified": "2026-08-08",
+      "dateModified": "2026-10-11",
       "inLanguage": "en-US"
     })} />
 
