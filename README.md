@@ -35,7 +35,7 @@ Or connect the GitHub repo to Cloudflare Pages / Workers and set build command `
 
 - Fully static, edge-optimized
 - Complete Open Graph + Twitter meta
-- JSON-LD structured data (WebSite, WebPage, FAQPage)
+- JSON-LD structured data (WebSite, Product Offer with price/priceCurrency, WebPage, FAQPage)
 - Mobile-first responsive design
 - Sophisticated domain-acquisition CTA in footer
 - robots.txt + auto-generated sitemap
