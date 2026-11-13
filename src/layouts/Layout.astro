@@ -9,6 +9,8 @@ interface Props {
 }
 
 const siteOrigin = 'https://bwax.services';
+/** Asking / starting price for the domain listing (USD). Keep in sync with visible UI. */
+const domainAskingPriceUsd = 4999;
 const pathname = Astro.url.pathname.endsWith('/')
   ? Astro.url.pathname
   : `${Astro.url.pathname}/`;
@@ -98,6 +100,8 @@ const twitterHandle = '@bwaxservices';
       "offers": {
         "@type": "Offer",
         "url": `${siteOrigin}/#acquisition`,
+        "price": String(domainAskingPriceUsd),
+        "priceCurrency": "USD",
         "availability": "https://schema.org/InStock",
         "itemCondition": "https://schema.org/NewCondition",
         "seller": {
@@ -127,7 +131,7 @@ const twitterHandle = '@bwaxservices';
         "description": "Hair removal method using warm or cold wax that extracts hair from the root, providing smooth skin for 3 to 4 weeks."
       },
       "datePublished": "2026-07-29",
-      "dateModified": "2026-10-11",
+      "dateModified": "2026-11-13",
       "inLanguage": "en-US"
     })} />
 
