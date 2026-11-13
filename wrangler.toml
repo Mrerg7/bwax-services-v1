@@ -2,7 +2,7 @@
 # Name must match Workers Builds project: bwax-services-v1
 name = "bwax-services-v1"
 compatibility_date = "2025-07-01"
-workers_dev = true
+workers_dev = false
 preview_urls = false
 main = "src/worker.ts"
 
